@@ -8,10 +8,10 @@ public class Principal {
         Scanner sc = new Scanner(System.in);
         int anho = sc.nextInt();
 
-        if (anho % 4 == 0 || anho % 100 != 0 || anho % 400 == 0) {
+        if (anho % 4 == 0 && anho % 100 != 0 || anho % 400 == 0) {
             System.out.println("El año es bisiesto");
 
-        } else if (anho * 4 == 0 || anho * 100 == 0 && anho * 400 != 0) {
+        } else if (anho % 4 != 0 && anho % 100 == 0 || anho % 400 != 0) {
             System.out.println("El año no es bisiesto");
         }
 
