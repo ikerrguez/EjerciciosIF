@@ -16,15 +16,15 @@ public class Principal {
         Scanner sc3 = new Scanner(System.in);
         int tercerLado = sc3.nextInt();
 
-        if (primerLado == segundoLado && segundoLado == tercerLado) {
+        if (primerLado == segundoLado && primerLado== tercerLado ) {
             System.out.println("El triángulo es equilátero");
         }
 
-        if (primerLado != segundoLado && segundoLado != tercerLado) {
+        if (primerLado != segundoLado && segundoLado != tercerLado && primerLado != tercerLado) {
             System.out.println("El triángulo es escaleno");
         }
 
-        if (primerLado == segundoLado || primerLado == tercerLado || segundoLado == tercerLado) {
+        if (primerLado != segundoLado && primerLado == tercerLado || primerLado == segundoLado && primerLado != tercerLado || tercerLado == segundoLado && primerLado != tercerLado) {
             System.out.println("El triángulo es isósceles");
 
         }
